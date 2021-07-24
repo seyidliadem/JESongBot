@@ -35,13 +35,13 @@ bot = Client(
 @bot.on_message(filters.command("start") & ~filters.edited)
 async def start(_, message):
    if message.chat.type == 'private':
-       await message.reply("**Hey There, I'm a song downloader bot. A bot by @Infinity_Bots.\nUsage:** `/song [query]`",   
+       await message.reply("**. Salam , Yükləmək isdədiyiniz mahnının adını yazın əvvəlinə /song artırın (Məsələn : /song Azərbaycan Himni).\nUsage:** `/song [query]`",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Dev", url="https://t.me/Infinity_Bots"),
+                                            "Əlaqə Profil", url="https://t.me/SeyidliAdem"),
                                         InlineKeyboardButton(
-                                            "Source", url="https://github.com/imjanindu/jesongbot")
+                                            "Əlaqə Qrupu", url="https://t.me/MusiqiAzerbaycanYoutube")
                                     ]]
                             ))
    else:
