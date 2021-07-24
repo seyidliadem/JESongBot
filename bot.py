@@ -35,7 +35,7 @@ bot = Client(
 @bot.on_message(filters.command("start") & ~filters.edited)
 async def start(_, message):
    if message.chat.type == 'private':
-       await message.reply("**. Salam , Yükləmək isdədiyiniz mahnının adını yazın əvvəlinə /song artırın (Məsələn : /song Azərbaycan Himni).\nUsage:** `/song [query]`",   
+       await message.reply("**. Salam , Yükləmək isdədiyiniz mahnının adını yazın .\nUsage:** `/song [query]`",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
